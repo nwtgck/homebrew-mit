@@ -7,16 +7,16 @@ class Mit < Formula
   homepage "https://github.com/nwtgck/homebrew-mit"
   url "https://github.com/nwtgck/homebrew-mit/raw/master/mit.jar"
   sha1 "abe88272d52532ed4cf5778a4d00a0e9bcb0e990"
-  version '0.3'
+  version "0.4"
 
-  depends_on :java => '1.8+'
-  # depends_on :x11 # if your formula requires any X11/XQuartz components
+  depends_on :java => "1.8+"
+  #depends_on :x11 # if your formula requires any X11/XQuartz components
 
   def install
     if build.head?
       puts 'cant head install'
     else
-	    libexec.install 'mit.jar'
+      libexec.install 'mit.jar'
     end
     bin.write_jar_script libexec/"mit.jar", "mit"
   end
@@ -26,7 +26,7 @@ class Mit < Formula
     #
     # This test will fail and we won't accept that! It's enough to just replace
     # "false" with the main program this formula installs, but it'd be nice if you
-    # were more thorough. Run the test with `brew test nwtgck-helloworld`. Options passed
+    # were more thorough. Run the test with `brew test mit`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
     #
     # The installed folder is not in the path, so use the entire path to any
