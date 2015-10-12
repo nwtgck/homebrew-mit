@@ -4,10 +4,10 @@
 
 class Mit < Formula
   desc "This is mit command"
-  homepage "https://github.com/nwtgck/homebrew-mit"
+  homepage "https://github.com/nwtgck/homebrew-mit/"
   url "https://github.com/nwtgck/homebrew-mit/raw/master/mit.jar"
   sha1 "abe88272d52532ed4cf5778a4d00a0e9bcb0e990"
-  version "0.4"
+  version "0.4.1"
 
   depends_on :java => "1.8+"
   #depends_on :x11 # if your formula requires any X11/XQuartz components
