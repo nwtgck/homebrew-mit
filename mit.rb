@@ -5,7 +5,7 @@
 class Mit < Formula
   desc "This is mit command"
   homepage "https://github.com/nwtgck/homebrew-mit"
-  url "https://github.com/nwtgck/public-download/raw/master/HelloWorldJar.jar"
+  url "https://github.com/nwtgck/homebrew-mit/"
   sha1 "abe88272d52532ed4cf5778a4d00a0e9bcb0e990"
   version '0.2'
 
