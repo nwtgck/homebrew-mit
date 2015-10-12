@@ -5,9 +5,9 @@
 class Mit < Formula
   desc "This is mit command"
   homepage "https://github.com/nwtgck/homebrew-mit"
-  url "https://github.com/nwtgck/homebrew-mit/"
+  url "https://github.com/nwtgck/homebrew-mit/raw/master/mit.jar"
   sha1 "abe88272d52532ed4cf5778a4d00a0e9bcb0e990"
-  version '0.2'
+  version '0.1'
 
   depends_on :java => '1.8+'
   # depends_on :x11 # if your formula requires any X11/XQuartz components
@@ -16,9 +16,9 @@ class Mit < Formula
     if build.head?
       puts 'cant head install'
     else
-	    libexec.install 'HelloWorldJar.jar'
+	    libexec.install 'mit.jar'
     end
-    bin.write_jar_script libexec/"HelloWorldJar.jar", "mit"
+    bin.write_jar_script libexec/"mit.jar", "mit"
   end
 
   test do
