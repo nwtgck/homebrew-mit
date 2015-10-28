@@ -7,7 +7,7 @@ class Mit < Formula
   homepage "https://github.com/nwtgck/homebrew-mit/"
   url "https://github.com/nwtgck/homebrew-mit/raw/master/mit.jar"
   sha256 "bf40c5c26e9f4fdc10d5c867ed00d05e24eee38d56542c11bdf5c147a529c4b1"
-  version "0.5.3"
+  version "0.5.4"
 
   depends_on :java => "1.8+"
   #depends_on :x11 # if your formula requires any X11/XQuartz components
