@@ -13,7 +13,7 @@ mit_sh_install_path=/usr/local/bin/
 # mit.jarのインストール先
 mit_jar_install_path=/usr/local/jar/
 # 起動用スクリプトが置かれているURL
-mit_sh_url="http://nwtgck.dip.jp/mit/download/$mit_sh_name"
+mit_sh_url="https://raw.githubusercontent.com/nwtgck/homebrew-mit/master/$mit_sh_name"
 # mit.jarが置かれているURL
 mit_jar_url="https://github.com/nwtgck/homebrew-mit/raw/master/$mit_jar_name"
 
