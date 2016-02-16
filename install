@@ -1,0 +1,31 @@
+#! /bin/bash
+
+# sudo指定なかったら
+if [ ${USER} != "root" ]; then
+	echo 'Error: Please run "sudo ./install"'
+	exit
+fi
+
+mit_sh_name=mit
+mit_jar_name='mit.jar'
+# mitの起動用スクリプトのインストール先
+mit_sh_install_path=/usr/local/bin/
+# mit.jarのインストール先
+mit_jar_install_path=/usr/local/jar/
+# 起動用スクリプトが置かれているURL
+mit_sh_url="http://nwtgck.dip.jp/mit/download/$mit_sh_name"
+# mit.jarが置かれているURL
+mit_jar_url="https://github.com/nwtgck/homebrew-mit/raw/master/$mit_jar_name"
+
+# mit.jarのインストール先のディレクトリを作成
+mkdir -p $mit_jar_install_path
+
+# 起動用スクリプトをインストール先にダウンロード	
+wget $mit_sh_url -O "$mit_sh_install_path/$mit_sh_name"
+# mit.jarをインストール先にダウンロード
+wget $mit_jar_url -O "$mit_jar_install_path/$mit_jar_name"
+
+# 起動用スクリプトに実行権限を与える
+chmod +x "$mit_sh_install_path/$mit_sh_name"
+
+echo "mit installed!"
