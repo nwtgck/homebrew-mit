@@ -26,6 +26,6 @@ wget $mit_sh_url -O "$mit_sh_install_path/$mit_sh_name"
 wget $mit_jar_url -O "$mit_jar_install_path/$mit_jar_name"
 
 # 起動用スクリプトに実行権限を与える
-chmod +x "$mit_sh_install_path/$mit_sh_name"
+chmod 755 "$mit_sh_install_path/$mit_sh_name"
 
 echo "mit installed!"
