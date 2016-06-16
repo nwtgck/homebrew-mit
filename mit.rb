@@ -6,8 +6,8 @@ class Mit < Formula
   desc "This is mit command"
   homepage "https://github.com/nwtgck/homebrew-mit/"
   url "https://github.com/nwtgck/homebrew-mit/raw/master/mit.jar"
-  sha256 "6f2c5c0acdf5235a593649cbb7ca1ae9c7b5f22ef526d42a819a07e55d27ceb7"
-  version "0.5.5"
+  sha256 "2fbd995f99c96e4bd737774d8fb5b4b9300c5f82ba9061e69becf6724f780841"
+  version "0.5.6"
 
   depends_on :java => "1.8+"
   #depends_on :x11 # if your formula requires any X11/XQuartz components
